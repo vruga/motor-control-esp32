@@ -1,0 +1,126 @@
+�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15716
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF cab6f10 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  5 2026 20:07:07[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e680h (124544) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002e6a8 vaddr=3ffb0000 size=01970h (  6512) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=89ffch (565244) map[0m
+[0;32mI (357) esp_image: segment 3: paddr=000ba024 vaddr=3ffb1970 size=02334h (  9012) load[0m
+[0;32mI (361) esp_image: segment 4: paddr=000bc360 vaddr=40080000 size=16bd4h ( 93140) load[0m
+[0;32mI (413) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (425) cpu_start: Multicore app[0m
+[0;32mI (426) cpu_start: Pro cpu up.[0m
+[0;32mI (426) cpu_start: Starting app cpu, entry point is 0x400813d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (443) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) cpu_start: Application information:[0m
+[0;32mI (448) cpu_start: Project name:     water_pump[0m
+[0;32mI (453) cpu_start: App version:      1[0m
+[0;32mI (458) cpu_start: Compile time:     Feb  5 2026 20:07:02[0m
+[0;32mI (464) cpu_start: ELF file SHA256:  4d90bc6669feaf6e...[0m
+[0;32mI (470) cpu_start: ESP-IDF:          cab6f10[0m
+[0;32mI (475) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (479) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (484) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (489) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (496) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFB7BA8 len 00028458 (161 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (515) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (521) heap_init: At 40096BD4 len 0000942C (37 KiB): IRAM[0m
+[0;32mI (529) spi_flash: detected chip: generic[0m
+[0;32mI (532) spi_flash: flash io: dio[0m
+[0;33mW (536) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (550) app_start: Starting scheduler on CPU0[0m
+[0;32mI (554) app_start: Starting scheduler on CPU1[0m
+[0;32mI (554) main_task: Started on CPU0[0m
+[0;32mI (564) main_task: Calling app_main()[0m
+[0;32mI (564) plant_doctor: PlantDoc AI - Plant Disease Detection System[0m
+[0;32mI (574) plant_doctor: ============================================[0m
+[0;32mI (594) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (604) plant_doctor: Pump initialized on GPIO 25 (PWM) and GPIO 26 (DIR)[0m
+[0;32mI (604) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (614) plant_doctor: Pump stopped[0m
+[0;32mI (624) wifi:wifi driver task: 3ffbfd8c, prio:23, stack:6656, core=0[0m
+[0;32mI (634) wifi:wifi firmware version: e2684e8[0m
+[0;32mI (634) wifi:wifi certification version: v7.0[0m
+[0;32mI (634) wifi:config NVS flash: enabled[0m
+[0;32mI (634) wifi:config nano formating: disabled[0m
+[0;32mI (634) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (644) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (644) wifi:Init management short buffer num: 32[0m
+[0;32mI (654) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (654) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (664) wifi:Init static rx buffer num: 10[0m
+[0;32mI (664) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (674) wifi_init: rx ba win: 6[0m
+[0;32mI (674) wifi_init: tcpip mbox: 32[0m
+[0;32mI (674) wifi_init: udp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp tx win: 5760[0m
+[0;32mI (684) wifi_init: tcp rx win: 5760[0m
+[0;32mI (694) wifi_init: tcp mss: 1440[0m
+[0;32mI (694) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (704) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (794) phy_init: phy_version 4861,b71b5ad,Aug  5 2025,11:16:06[0m
+[0;32mI (864) wifi:mode : softAP (f4:65:0b:52:d8:b1)[0m
+[0;32mI (864) wifi:Total power save buffer number: 16[0m
+[0;32mI (864) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (864) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (874) plant_doctor: WiFi AP started. SSID: PlantDoc[0m
+[0;32mI (874) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (884) plant_doctor: Connect to WiFi and open http://192.168.4.1[0m
+[0;32mI (894) plant_doctor: HTTP server started[0m
+[0;32mI (894) plant_doctor: System ready![0m
+[0;32mI (904) plant_doctor: 1. Connect to WiFi: PlantDoc[0m
+[0;32mI (904) plant_doctor: 2. Open browser: http://192.168.4.1[0m
+[0;32mI (914) plant_doctor: 3. Select plant to analyze[0m
+[0;32mI (924) main_task: Returned from app_main()[0m
+[0;32mI (31204) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1[0m
+[0;32mI (31204) wifi:station: 66:d1:0b:27:c0:e7 join, AID=1, bgn, 20[0m
+[0;32mI (31204) plant_doctor: Station connected - MAC: 66:d1:0b:27:c0:e7[0m
+[0;32mI (31244) wifi:<ba-add>idx:2 (ifx:1, 66:d1:0b:27:c0:e7), tid:6, ssn:0, winSize:64[0m
+[0;32mI (32544) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (34384) wifi:<ba-add>idx:3 (ifx:1, 66:d1:0b:27:c0:e7), tid:0, ssn:0, winSize:64[0m
+[0;33mW (34654) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (34654) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (42434) plant_doctor: Pump speed set to: 128 (50%)[0m
+[0;32mI (42434) plant_doctor: Spray started with PWM: 128[0m
+[0;32mI (56844) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (56844) plant_doctor: Pump stopped[0m
+[0;32mI (58034) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (58034) plant_doctor: Pump stopped[0m
+[0;32mI (59654) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (59654) plant_doctor: Pump stopped[0m
+[0;32mI (60144) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (60154) plant_doctor: Pump stopped[0m
+[0;32mI (60304) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (60304) plant_doctor: Pump stopped[0m
+[0;32mI (60634) plant_doctor: Pump speed set to: 0 (0%)[0m
+[0;32mI (60634) plant_doctor: Pump stopped[0m
+[0;32mI (77684) plant_doctor: Pump speed set to: 179 (70%)[0m
+[0;32mI (77694) plant_doctor: Spray started with PWM: 179[0m
+[0;32mI (86024) wifi:<ba-add>idx:4 (ifx:1, 66:d1:0b:27:c0:e7), tid:1, ssn:0, winSize:64[0m
